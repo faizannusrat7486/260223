@@ -1,0 +1,14 @@
+DBTTransformation:
+  outputs:
+    dev:
+      dataset: salesforce260223
+      job_execution_timeout_seconds: 300
+      job_retries: 1
+      keyfile: C:/drops-faizan-test-cb8fa23e9265.json
+      location: US
+      method: service-account
+      priority: interactive
+      project: drops-faizan-test
+      threads: 10
+      type: bigquery
+  target: dev
