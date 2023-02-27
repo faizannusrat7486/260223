@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: salesforce1 # It would be best to keep this named salesforce
+    schema: "{{ var('salesforce_schema', 'salesforce1') }}" # Configure the salesforce_schema var from your dbt_project.yml (alternatively you can hard-code the schema here if only using one Salesforce connector)
+    # Add the database where your Salesforce data resides if different from the target database. Eg. 'my_salesforce_database'. By default the target.database is used.
+    database: drops-faizan-test
+    tables:
+      - name: drops-faizan-test.salesforce1
+        description: Used for the recommended Option 1 version of the formula solution.
+      - name: fivetran_formula
+        description: Used for options 2 and 3 of the original individual formula solution.
+
+      ## Any other source tables you are creating models for should be defined here as well. They aren't required, but it is best organizational practice and allows Fivetran to compile data lineage graphs

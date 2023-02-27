@@ -8,6 +8,9 @@ config-version: 2
 
 # This setting configures which "profile" dbt uses for this project.
 profile: 'DBTTransformation'
+vars:
+    salesforce_database: drops-faizan-test    
+    salesforce_schema: salesforce1
 
 # These configurations specify where dbt should look for different types of files.
 # The `model-paths` config, for example, states that models in this project can be
