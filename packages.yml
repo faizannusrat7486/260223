@@ -1,0 +1,10 @@
+packages:
+  - package: fivetran/salesforce_formula_utils
+    version: [">=0.8.0", "<0.9.0"]
+
+  - package: fivetran/salesforce
+    version: 0.8.0
+
+    packages:
+  - package: dbt-labs/dbt_utils
+    version: 1.0.0
