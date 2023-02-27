@@ -1,7 +1,7 @@
 DBTTransformation:
   outputs:
     dev:
-      dataset: salesforce
+      dataset: salesforce260223
       job_execution_timeout_seconds: 300
       job_retries: 1
       keyfile: C:/drops-faizan-test-cb8fa23e9265.json
